@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherAPP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <img src="images/logo.svg" alt="logo">
+                    <span>Weather APP</span>
+                </div>
+                <form id="form" class="header__form">
+                    <input class="form___input" type="text" id="input" placeholder="Введите город">
+                    <button type="submit" class="form__btn" id="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="27" height="27" viewBox="0 0 50 50">
+                            <path d="M 21 3 C 11.6 3 4 10.6 4 20 C 4 29.4 11.6 37 21 37 C 24.354553 37 27.47104 36.01984 30.103516 34.347656 L 42.378906 46.621094 L 46.621094 42.378906 L 34.523438 30.279297 C 36.695733 27.423994 38 23.870646 38 20 C 38 10.6 30.4 3 21 3 z M 21 7 C 28.2 7 34 12.8 34 20 C 34 27.2 28.2 33 21 33 C 13.8 33 8 27.2 8 20 C 8 12.8 13.8 7 21 7 z"></path>
+                            </svg>
+                    </button>
+                    <div class="form__modal">
+                        <span class="form__modal-message">Поле не может быть пустым!</span>
+                        <button type="button" class="close-modal">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <div class="item">
+                <div class="item__top">
+                    <div class="item__top-img">
+                    </div>
+                    <div class="item__top-info">
+                        <div class="item__top-city" id="city">
+                            Киев
+                        </div>
+                        <div class="item__top-date" id="date">
+                            <span>Понедельник</span>01/17/2022
+                        </div>
+                    </div>
+                </div>
+                <div class="item__center">
+                    <div class="item__temp" id="temp">
+                        15
+                        <span>°C</span>
+                    </div>
+                    <div class="item__weather" id="weather">
+                        Облачно
+                    </div>    
+                </div>
+                <div class="item__bottom">
+                    <div class="item__bottom-row">
+                        <div class="item__bottom-box">
+                            <div class="item__bottom-value  item__bottom-value--visibility">
+                                Видимость<span id="visibility">10км</span>
+                            </div>
+                        </div>
+                        <div class="item__bottom-box">
+                            <div class="item__bottom-value item__bottom-value--right  item__bottom-value--feels">
+                                Ощущается<span id="feels">10°C</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item__bottom-row">
+                        <div class="item__bottom-box">
+                            <div class="item__bottom-value  item__bottom-value--humidity">
+                                Влажность<span id="humidity">10%</span>
+                            </div>
+                        </div>
+                        <div class="item__bottom-box">
+                            <div class="item__bottom-value  item__bottom-value--right item__bottom-value--wind">
+                                Ветер<span id="wind">10км/ч</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
